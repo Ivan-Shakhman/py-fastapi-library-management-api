@@ -23,7 +23,7 @@ class BaseBook(BaseModel):
     title: str
     summary: str
     publication_date: datetime
-    authors: List[Author]
+    author_id: int
 
 class Book(BaseBook):
     id: int

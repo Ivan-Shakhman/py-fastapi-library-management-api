@@ -31,7 +31,7 @@ def create_book(db: Session, book: schemas.BookCreate):
 
     db.add(db_book)
     db.commit()
-    db.refresh(book)
+    db.refresh(db_book)
 
     return book
 
@@ -44,7 +44,7 @@ def create_author(db: Session, author: schemas.AuthorCreate):
 
     db.add(db_author)
     db.commit()
-    db.refresh(author)
+    db.refresh(db_author)
 
     return author
 
